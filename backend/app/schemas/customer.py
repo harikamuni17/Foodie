@@ -14,3 +14,7 @@ class CustomerResponse(BaseModel):
 
     class Config:
         orm_mode = True
+
+class CustomerLogin(BaseModel):
+    email: EmailStr
+    password: str
